@@ -36,7 +36,7 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git https://github.com/Akinmyde/carbon-graphql.git
+  git clone https://github.com/Akinmyde/carbon-graphql
 ```
 
 Go to the project directory
@@ -58,9 +58,9 @@ Start the server
 ```
 
 
-## Graphql Reference
+## GraphAl Reference
 
-#### Retrieving all consumptions
+#### Get all items
 
 ```graphql
   Query consumptions
@@ -70,6 +70,19 @@ Start the server
 | :-------- | :------- | :------------------------- |
 | `startDate` | `string` | **Not Required**. Your Start Date |
 | `endDate` | `string` | **Not Required**. Your End Date |
+
+## Usage/Examples
+
+use a tool like [GraphQL Playground](https://github.com/graphql/graphql-playground) or [Postman](https://www.postman.com/) to send the following query
+```javascript
+query {
+  consumption(startDate: "2024-07-01", endDate: "2024-07-02") {
+    datetime
+    value
+  }
+}
+```
+
 
 ## Screenshots
 
@@ -89,3 +102,4 @@ You can get sample data here to seed to your DB: [test data](https://gist.github
 ## Authors
 
 - [@akinmyde](https://www.github.com/akinmyde)
+
