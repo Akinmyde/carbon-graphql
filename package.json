@@ -1,0 +1,37 @@
+{
+  "name": "apollo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "npm run compile",
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/src/server.js",
+    "dev": "nodemon",
+    "codegen": "graphql-codegen --config codegen.ts",
+    "migration": "npx prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.3",
+    "@graphql-codegen/typescript": "4.1.2",
+    "@graphql-codegen/typescript-resolvers": "4.4.1",
+    "@types/node": "^22.10.1",
+    "nodemon": "^3.1.7"
+  },
+  "prisma": {
+    "schema": "src/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@prisma/client": "^6.0.1",
+    "graphql": "^16.9.0",
+    "joi": "^17.13.3",
+    "prisma": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

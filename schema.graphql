@@ -1,0 +1,9 @@
+type Consumption {
+  id: Int!
+  timestamp: String!
+  value: Float!
+}
+
+type Query {
+  consumptions(startDate: String, endDate: String): [Consumption]
+}
