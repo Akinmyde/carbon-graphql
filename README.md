@@ -36,7 +36,7 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://github.com/Akinmyde/carbon-graphql
+  git https://github.com/Akinmyde/carbon-graphql.git
 ```
 
 Go to the project directory
@@ -60,7 +60,7 @@ Start the server
 
 ## Graphql Reference
 
-#### Get all items
+#### Retrieving all consumptions
 
 ```graphql
   Query consumptions
