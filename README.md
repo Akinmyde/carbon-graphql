@@ -20,6 +20,17 @@ This is a GraphQL backend built using Node.js, Apollo Server, and Prisma ORM. It
 
 - Prisma ORM: Database management
 
+
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`DATABASE_URL`
+
+
+
 ## Run Locally
 
 Clone the project
@@ -62,7 +73,7 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://res.cloudinary.com/codeace/image/upload/v1733775156/Screenshot_2024-12-09_at_21.12.25.jpg)
 
 
 ## Migration and Seeding
